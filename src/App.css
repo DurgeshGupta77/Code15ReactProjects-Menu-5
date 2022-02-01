@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+main section .title-menu {
+    display: grid;
+    place-items: center;
+    margin-bottom: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+main section .title-menu h1 {
+    font-size: 64px;
+    margin-top: 20px;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+main section .title-menu .underline {
+    width: 8%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: chocolate;
 }
 
-.App-link {
-  color: #61dafb;
+.main-content {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 50px;
+    margin: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.main-content .menu-items .menu-items-card {
+    display: flex;
+}
+
+.main-content .menu-items .menu-items-card .menu-items-content {
+    width: 50%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+}
+
+.main-content .menu-items .menu-items-card .menu-items-content .menu-items-desc {
+    margin-top: 30px;
+}
+
+.main-content .menu-items .menu-items-card .menu-items-content .menu-items-content-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-content .menu-items .menu-items-card .menu-items-content .menu-items-content-title div h3 {
+    text-transform: capitalize;
+}
+
+.main-content .menu-items .menu-items-card .menu-items-content .menu-items-content-title div p {
+    font-weight: bold;
+    color: chocolate;
+}
+
+.main-content .menu-items .menu-items-card .menu-items-image {
+    border: 5px solid chocolate;
+    width: 300px;
+    height: 200px;
+}
+
+.main-content .menu-items .menu-items-card .menu-items-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn-group {
+    display: grid;
+    place-items: center;
+    /* border: 1px solid red; */
+}
+
+.btn-group .category-btn-group {
+    display: flex;
+    /* border: 1px solid black; */
+}
+
+.btn-group .category-btn-group div button {
+    margin-right: 30px;
+    padding: 10px;
+    background-color: white;
+    border: none;
+    color: chocolate;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: bold;
 }
